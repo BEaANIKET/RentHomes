@@ -1,0 +1,110 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+.navbar{
+    width: 100%;
+    margin:0 auto;
+    height: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: fixed;
+    top: 0;
+    margin-left: 50%;
+    transform: translateX(-50%);
+    z-index: 999;
+    transition: all ease .4s;
+}
+.navbar-items{
+    width: 80%;
+    height: 100%;
+}
+.navlogo{
+    height: 48px;
+    width: 150px;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    top: 20px;
+}
+.navlogo img{
+    height: 100%;
+    width: 100%;
+}
+.navitem{
+    right: 0;
+    display: flex;
+    gap: 20px;
+    font-size: 18px;
+    font-weight: 600;
+    font-family: "Roboto", sans-serif;
+    font-style: normal;
+    opacity: .8;
+    color: black;
+    transition: all ease 1s;
+    float: right;
+}
+.navitem hr{
+    width: 100%;
+    height: 3px;
+    background-color: green;
+    border-radius: 20px;
+    margin-right: 1px;
+    transition: all ease .4s;
+}
+.navitem li{
+    list-style: none;
+}
+.menulogo{
+    height: 25px;
+    width: 25px;
+    overflow: hidden;
+    display: none;
+    position: absolute;
+    right: 0;
+    z-index: 999;
+    top: 30px;
+}
+.menulogo img{
+    height: 100%;
+    width: 100%;
+}
+
+
+
+@media (max-width:850px) {
+    .navbar{
+        position: absolute;
+        width: 100%;
+        top: 0;
+        margin-top: 0;
+    }
+    .navitem{
+        position: absolute;
+        width: 100%;
+        z-index: 990;
+        height: 80vh;
+        top: 0;
+        align-items: center;
+        justify-content: center;
+        gap: 20px;
+        right: 0;
+        background-color: rgb(255, 241, 240);
+        flex-direction: column;
+        opacity: 1;
+    }
+    .menulogo{
+        display: block;
+        right: 10vw;
+    }
+    .upper{
+        transform: translateX(-100%);
+    }
+    .navlogo{
+        left: 10vw;
+    }
+    .navlogo {
+        position: absolute;
+
+    }
+}
