@@ -95,13 +95,13 @@
     }
     .menulogo{
         display: block;
-        right: 10vw;
+        right: 6vw;
     }
     .upper{
         transform: translateX(-100%);
     }
     .navlogo{
-        left: 10vw;
+        left: 6vw;
     }
     .navlogo {
         position: absolute;
