@@ -64,8 +64,9 @@
     border: 1px solid black;
     background-color: white;
     color: rgba(13, 69, 18, 1);
-    font-size: 14px;
+    font-size: 17px;
     font-weight: 600;
+    border: 1px solid black;
 }
 .home2-right-bottom button:hover{
     color: white;

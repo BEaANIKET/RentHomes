@@ -1,0 +1,38 @@
+@import url('https://fonts.googleapis.com/css2?family=Assistant:wght@200..800&family=Comfortaa:wght@300..700&display=swap');
+
+
+.housemenupage{ 
+  font-family: "Assistant", sans-serif;
+    width: min(1300px,90%);
+    display: flex;
+    margin: 0 auto;
+    flex-direction: column;
+    gap: 30px;
+    margin-top: 100px;
+}
+.housemenupage-top{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    align-items: center;
+}
+.housemenupage-smallHead{
+    font-size: min(7vw,30px);
+    opacity: .8;
+}
+.housemenupage-bighead{
+    font-size: min(10vw,40px);
+    opacity: .9;
+    font-weight: 700;
+}
+.housemenupage-about{
+    font-size: min(6vw,18px);
+    opacity: .6;
+}
+.housemenupage-bottom{
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px 10px;
+    justify-content:center;
+}

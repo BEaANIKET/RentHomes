@@ -1,22 +1,28 @@
+import { BrowserRouter, Route, Router, Routes } from 'react-router-dom'
 import './App.css'
 import Footer from './Footer/Footer'
-import Home from './Home/Home'
-import Home2 from './Home2/Home2'
+import HouseMenuPage from './HouseMenu/Housemenu'
 import Nav from './Nav/Nav'
+import Frontpage from './frontpage/Frontpage'
+import HomeDetails from './Homedetails/Homedatails'
 import Services from './Services/Services'
 import Testonomials from './Testonomials/Testonimals'
 
 function App() {
 
   return (
-    <>
-        <Nav/>
-        <Home/>
-        <Home2/>
-        <Services/>
-        <Testonomials/>
-        <Footer/>
-    </>
+    <BrowserRouter>
+      <Nav/>
+      <Routes>
+        <Route path='/' element={<Frontpage/>}/>
+        <Route path='/Services' element={<Services/>}/>
+        <Route path='/Reviews' element={<Testonomials/>}/>
+        <Route path='/menupage' element={<HouseMenuPage/>} />
+        <Route path='/menupage/:homeId' element={<HomeDetails/>} />
+      </Routes>
+
+      <Footer/>
+    </BrowserRouter>
   )
 }
 

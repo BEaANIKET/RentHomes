@@ -80,7 +80,7 @@
         margin-top: 0;
     }
     .navitem{
-        position: absolute;
+        position: fixed;
         width: 100%;
         z-index: 990;
         height: 80vh;

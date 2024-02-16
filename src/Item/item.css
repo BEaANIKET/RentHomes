@@ -1,0 +1,70 @@
+@import url('https://fonts.googleapis.com/css2?family=Comfortaa:wght@300..700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Assistant:wght@200..800&family=Comfortaa:wght@300..700&display=swap');
+.item{
+    width: 300px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    transition: all ease .8s;
+}
+.item:hover{
+    scale: 1.1;
+}
+.item-top{
+    width: 100%;
+    overflow: hidden;
+}
+
+.item-top img{
+    height: 100%;
+    width: 100%;
+    aspect-ratio: 4/3;
+}
+
+.item-bottom{
+    display: flex;
+    width: 100%;
+    flex-direction: column;
+
+    /* align-items: center; */
+}
+.btnlink{
+    width: 100%;
+    display: flex;
+    text-decoration: none;
+}
+.item-bottom-name{
+    font-size: 35px;
+    font-weight: 500;
+    font-family: "Assistant", sans-serif;
+}
+.item-bottom-prices{
+    font-size: 20px;
+    display: flex;
+    gap: 2px;
+    align-items: end;
+    font-family: "Comfortaa", sans-serif;
+
+}
+.item-bottom-price-price{
+    font-size: 45px;    
+}
+.dollor{
+    margin-bottom:24px;
+}
+.item-bottom-details{
+    display: flex;
+    margin-top: 10px;
+    width: 100%;
+    flex-direction: column;
+    opacity: .6;
+}
+.item-bottom-button{
+    height: 40px;
+    border-radius: 10px;
+    width: 100px;
+    background-color: rgba(120,12,11,255);
+    color: white;
+    margin: 0 auto;
+    border: none;
+}

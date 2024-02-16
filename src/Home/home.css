@@ -116,9 +116,8 @@
         align-items: center;
     }
     .home-left-bottom-btn button{
-        height: 25px;
-        width: 70px;
-        font-size: 8px;
-
+        height: 34px;
+        width: 92px;
+        font-size: 10px;
     }
 }

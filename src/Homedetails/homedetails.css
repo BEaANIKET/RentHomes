@@ -1,0 +1,64 @@
+@import url('https://fonts.googleapis.com/css2?family=Smooch+Sans:wght@100..900&display=swap');
+
+
+.homedetails{
+    width: 90%;
+    display: flex;
+    margin: 100px auto ;
+    flex-direction: column;
+    justify-content: center;
+}
+.homedetails-top{
+    display: flex;
+    width: 100%;
+    flex-direction: column;
+    gap: 20px;
+    align-items: center;
+}
+.homedetails-top-bigimg{
+    width: min(100%,600px);
+    display: flex;
+    align-items: center;
+}
+.homedetails-top-bigimg img{
+    width: 100%;
+}
+.homedetails-top-smallimg{
+    display: grid;
+    gap: 10px;
+    overflow: scroll;
+    width: min(635px,100%);
+    grid-template-columns: repeat(4,1fr);
+    place-items:center ;
+}
+.homedetails-top-smalldiv{
+    width: min(28vw,150px);
+}
+
+.homedetails-top-smallimg img{
+    width: 100%;
+    aspect-ratio: 3/2;
+}
+.homedetails-bottom{
+    display: flex;
+    flex-direction: column;
+    width: min(1100px,100%);
+    gap: 30px;
+    font-family: "Smooch Sans", sans-serif;
+
+}
+.homedetails-bottom-text{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+.homedetails-bottom-text-head{
+    font-size: min(9vw,25px);
+    font-weight: 700;
+    text-transform: uppercase;
+}
+.homedetails-bottom-text-about{
+    font-size: min(5vw,20px);
+    opacity: .6;
+    font-weight: 500;
+}

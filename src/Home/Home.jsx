@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from "react";
 import './home.css'
-// import HomeImg1 from '../Assets/homehouse1.jpg'
+import { Link } from "react-router-dom";
 import HomeImg2 from '../Assets/homehouse2.jpg'
 import HomeImg3 from '../Assets/homehouse3.jpg'
 import HomeImg4 from '../Assets/homehouse4.jpg'
@@ -38,7 +38,7 @@ const Home =()=>{
                 <div className="home-left-bottom">
                     <p>We Make Finding Rentals Easy, Effortless Search, Endless Choices</p>
                     <div className="home-left-bottom-btn">
-                        <button>Rent Now</button>
+                        <Link to={'/menupage'} style={{textDecoration:'none'}}><button>Rent Now</button></Link>
                         <button>Rent Your Place</button>
                     </div>
                 </div>

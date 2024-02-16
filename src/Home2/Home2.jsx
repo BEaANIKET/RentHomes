@@ -1,6 +1,7 @@
 import React from "react";
 import './home2.css'
 import home_img from '../Assets/home2.jpg'
+import { Link } from "react-router-dom";
 
 const Home2 = () => {
   return (
@@ -22,7 +23,7 @@ const Home2 = () => {
           </p>
           <p>With detailed descriptions, vivid photos, and handy filters, finding your ideal rental is just a click away. </p>
 
-          <button>Continue</button>
+          <Link style={{textDecoration:'none'}} to={'/menupage'}><button onClick={()=>window.scrollTo(0,0)} >Continue</button></Link>
         </div>
       </div>
     </div>
